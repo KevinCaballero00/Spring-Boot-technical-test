@@ -3,15 +3,13 @@ package com.kevcaballero.tech_test_supermarket.model;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Producto {
 
     @Id
@@ -20,5 +18,5 @@ public class Producto {
     private String nombre;
     private String categoria;
     private Double precio;
-    private int canitdad;
+    private int cantidad;
 }
